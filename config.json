@@ -1,0 +1,105 @@
+{
+  "project": {
+    "name": "DigitalSEE",
+    "description": "Interactive Site Object Knowledge Graph",
+    "version": "1.0.0"
+  },
+  "visualization": {
+    "title": "DigitalSEE — Site Object Knowledge Graph",
+    "stats": {
+      "sites": 272,
+      "categories": 39,
+      "ages": 5,
+      "authors": 50,
+      "edges": 883
+    }
+  },
+  "colors": {
+    "DI_inscriptions": "#e6194B",
+    "IV_travelAccounts": "#3cb44b",
+    "MB_schad": "#4363d8",
+    "VR_racheva": "#42d4f4",
+    "KA_architecture": "#911eb4",
+    "DS_other": "#f58231",
+    "categories": "#ffe119",
+    "ages": "#fabebe",
+    "authors": "#f032e6",
+    "background": "#F4F1EA",
+    "textDark": "#3A2E1F",
+    "textLight": "#E6D8BD",
+    "border": "#D8D2C4",
+    "headerBg": "#6B5500",
+    "headerBorder": "#8A6F1A"
+  },
+  "shapes": {
+    "site": "dot",
+    "category": "diamond",
+    "age": "hexagon",
+    "author": "triangle"
+  },
+  "physics": {
+    "enabled": true,
+    "barnesHut": {
+      "gravitationalConstant": -26000,
+      "centralGravity": 0.3,
+      "springLength": 200
+    },
+    "solver": "barnesHut",
+    "stabilization": {
+      "iterations": 200,
+      "fit": true
+    },
+    "timeStep": 0.35
+  },
+  "search": {
+    "minChars": 2,
+    "highlightOpacity": 1.0,
+    "dimmedOpacity": 0.15,
+    "autoFocusLimit": 5,
+    "focusScale": 1.2
+  },
+  "dataCollections": {
+    "DI": {
+      "name": "Digital Inscriptions",
+      "description": "Epigraphic records from Bulgarian sites"
+    },
+    "IV": {
+      "name": "Travel Accounts",
+      "description": "Historical travel documents and observations"
+    },
+    "MB": {
+      "name": "Schad Materials",
+      "description": "Captain Schad's 18th-century survey materials"
+    },
+    "VR": {
+      "name": "Racheva Research",
+      "description": "Contemporary research by Vania Racheva"
+    },
+    "KA": {
+      "name": "Architecture Materials",
+      "description": "Architectural analysis materials"
+    },
+    "DS": {
+      "name": "DigitalSEE Collection",
+      "description": "Other DigitalSEE project materials"
+    }
+  },
+  "historicalAges": {
+    "iron_age": "Iron Age",
+    "roman_age": "Roman Age",
+    "middle_ages": "Middle Ages",
+    "ottoman_period": "Ottoman Period",
+    "late_antiquity": "Late Antiquity"
+  },
+  "deployment": {
+    "platform": "GitHub Pages",
+    "externalResources": [
+      {
+        "name": "vis-network",
+        "version": "latest",
+        "cdn": "https://unpkg.com/vis-network/standalone/umd/vis-network.min.js",
+        "description": "Network visualization library"
+      }
+    ]
+  }
+}
